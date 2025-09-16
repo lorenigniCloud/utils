@@ -1,0 +1,69 @@
+yarn add react-native-paper
+yarn add react-native-safe-area-context
+yarn add react-native-vector-icons
+
+
+
+---> crea una nuova app expo con template ts 
+npx create-expo-app my-app -t expo-template-blank-typescript
+
+---> tsconfig.json (abilito percorsi assoluti con @)
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}
+
+---> package.json (cambio entry point - non necessario)
+"main": "expo-router/entry",
+
+
+
+1. Utilizzo del Dispositivo USB e Installazione dell'APK
+adb devices
+adb -s 3105ee85  reverse tcp:8081 tcp:8081 
+yarn android oppure ./gradlew assembleDebug..........
+
+2. Errori in Fase di Build Relativi alla Pulizia della Soluzione
+Elimina l'intera cartella .gradle
+.\gradlew.bat clean 
+
+
+3. Creazione del Build Release
+cd android
+.\gradlew.bat assembleRelease
+android/app/build/outputs/apk/release/app-release.apk
+
+Cache clean
+expo start -c
+
+
+--> expo router tab/drawer/ app commands
+
+npx create-expo-app router-app -t tabs
+npx expo install @react-navigation/drawer react-native-gesture-handler react-native-reanimated
+
+Next section for secure store of the tokens
+npx expo install expo-secure-store
+npm i axios
+
+
+
+
+
+
+
+
+

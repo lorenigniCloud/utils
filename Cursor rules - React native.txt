@@ -1,0 +1,33 @@
+Linee guida per l'installazione di librerie da utilizzare nello sviluppo di un'app React-Native:
+
+- expo-router per il routing
+- State-management solution -> Zustand
+- Secure key-value Storage -> MMKV
+- Picker, dropdown and other generic components -> react-native-paper
+- Date Picker -> react-native-date-picker
+- Form -> react-hook-form
+- Validazione form -> yup
+- Visualizzazione cross-Platform -> react-native-safe-area-context
+- gestione locale dei dati -> expo-sqlite
+- internationalization -> i18next
+
+Nota bene che è importante seguire singolarmente, per ogni libreria, i passaggi indicati sui siti web di riferimento.
+
+
+Linee guida per la scrittura del codice fin dall'inizio nello sviluppo di un'app React-Native:
+- usare un approccio di coding basato su dark/light mode nella creazione di pagine e componenti
+- formattare le hardcoded string che servono come messaggi UI attraverso i file di configurazione di i18next (it, en)
+
+
+https://galaxies.dev/courses
+https://galaxies.dev/course/expo-router-5-rsc
+https://galaxies.dev/course/react-native-styling
+https://galaxies.dev/course/test-react-native-apps
+https://galaxies.dev/course/expo-router-fullstack
+https://galaxies.dev/course/react-native-deeplinks
+https://galaxies.dev/course/expo-modules
+https://galaxies.dev/course/react-native-maps
+https://galaxies.dev/course/react-native-notifications
+https://galaxies.dev/course/react-native-tanstack
+https://galaxies.dev/course/publish-react-native-apps
+https://galaxies.dev/course/react-native-firebase

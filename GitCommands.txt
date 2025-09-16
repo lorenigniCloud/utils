@@ -1,0 +1,76 @@
+git merge {from}
+git merge --abort
+# Annulla un merge in corso
+git checkout -b nome
+
+
+git init
+# Inizializza un nuovo repository Git nella cartella corrente
+
+git add 
+# Aggiunge tutti i file presenti al repository
+
+git commit -m "Primo commit"
+# Crea un commit con il messaggio "Primo commit"
+
+git remote add origin https://github.com/tuo_username/Flussi4.0.git
+# Aggiunge il repository remoto chiamato "origin"
+
+git push -u origin main
+# Spinge i cambiamenti al ramo "main" remoto e lo imposta come upstream
+
+git pull origin main
+# Sincronizza i cambiamenti dal remoto al locale.
+
+git remote -v
+# Mostra l'elenco delle origini remote configurate
+
+git branch -m master main
+# Rinomina il ramo "master" in "main"
+
+git ls-remote --heads origin
+# Elenca i rami remoti disponibili
+
+git config --global user.name "IlTuoNome"
+# Configura il nome utente a livello globale
+
+git config --global user.email "tua_email@example.com"
+# Configura l'email a livello globale
+
+git config --list.
+# Mostra l'elenco delle configurazioni globali
+
+git branch -m old-name new-name
+# rename locally a branch
+
+git push origin --delete {name}
+# delete remote branch
+
+git branch -d refactor/customizablesLib
+# delete local branch
+
+git reset --soft HEAD~1 
+# ripristina gli staged files e undo the commit
+
+git reset --hard origin/dev
+# reset it to the state of the remote
+
+git branch --list *feature*
+# Filtra branch che contengono "feature"
+
+### PORTARE I TUOI CAMBIAMENTI ATTUALI SU UN ALTRO BRANCH
+ -> git stash push -m "Cambiamenti da portare su altro branch"
+ -> git checkout nome-branch-destinazione
+ -> git stash pop
+
+### RINOMINA BRANCH REMOTO E LOCALE
+ -> git branch -m {vecchio_nome} {nuovo_nome} 		 [Rinomina locale]
+ -> git push origin --delete {vecchio_nome}   		 [Elimina remoto]
+ -> git branch --set-upstream-to=origin/NUOVO_NOME   [Imposta nuovo nome branch remoto]
+ -> git remote prune origin   						 [Rimuoverà tutti i riferimenti remoti che non esistono più]
+
+# Rimozione delle credenziali obsolete (su Windows):
+# 1. Apri "Pannello di Controllo"
+# 2. Vai su "Gestione Credenziali"
+# 3. Rimuovi le credenziali relative a GitHub
+

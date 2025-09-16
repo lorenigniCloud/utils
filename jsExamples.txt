@@ -1,0 +1,23 @@
+JS EXAMPLES
+
+
+let arr = [0, 1, 2];
+let arr2 = arr ;
+console.log(arr2 === arr)
+arr[0] = 5;
+console.log(arr2)
+let arr3 = [...arr]
+console.log(arr3 === arr)
+
+let name1 = "mario";
+let person = [{name1}];
+console.log(person)
+
+
+let obj = {name: 'mario'};
+let example = 'ugo';
+let obj2 = {name: example}
+let obj3 = {name: {example}}
+
+console.log(obj2)
+console.log(obj3)
