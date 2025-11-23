@@ -58,6 +58,13 @@ git reset --hard origin/dev
 git branch --list *feature*
 # Filtra branch che contengono "feature"
 
+git push origin <nome-branch> --force-with-lease
+# Porta il branch remoto al commit del tuo branch locale
+
+# Torna (locale) al commit abc123 e poi aggiorna il remoto
+git reset --hard abc123
+git push --force-with-lease origin release/dev
+
 ### PORTARE I TUOI CAMBIAMENTI ATTUALI SU UN ALTRO BRANCH
  -> git stash push -m "Cambiamenti da portare su altro branch"
  -> git checkout nome-branch-destinazione
@@ -73,4 +80,9 @@ git branch --list *feature*
 # 1. Apri "Pannello di Controllo"
 # 2. Vai su "Gestione Credenziali"
 # 3. Rimuovi le credenziali relative a GitHub
+
+
+nano ~/.zshrc
+start-emulator
+
 

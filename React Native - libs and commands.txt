@@ -61,7 +61,26 @@ npm i axios
 
 
 
+# Rimuovi la versione attuale
+yarn remove expo
 
+# Installa Expo SDK 51 (più stabile)
+yarn add expo@~51.0.0
+
+# Aggiorna le dipendenze Expo
+yarn expo install --fix
+
+# Pulisci tutto
+rm -rf node_modules yarn.lock ios android
+
+# Reinstalla
+yarn install
+
+# Rigenera i file nativi
+yarn expo prebuild --clean
+
+# Prova di nuovo
+yarn expo run:ios
 
 
 
