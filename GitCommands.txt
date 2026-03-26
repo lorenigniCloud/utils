@@ -71,10 +71,10 @@ git push --force-with-lease origin release/dev
  -> git stash pop
 
 ### RINOMINA BRANCH REMOTO E LOCALE
- -> git branch -m {vecchio_nome} {nuovo_nome} 		 [Rinomina locale]
- -> git push origin --delete {vecchio_nome}   		 [Elimina remoto]
- -> git branch --set-upstream-to=origin/NUOVO_NOME   [Imposta nuovo nome branch remoto]
- -> git remote prune origin   						 [Rimuoverà tutti i riferimenti remoti che non esistono più]
+ -> git branch -m {vecchio_nome} {nuovo_nome} 		  [Rinomina locale]
+ -> git push origin --delete {vecchio_nome}   		  [Elimina remoto]
+ -> git branch --set-upstream-to=origin/NUOVO_NOME        [Imposta nuovo nome branch remoto]
+ -> git remote prune origin   				        [Rimuoverà tutti i riferimenti remoti che non esistono più]
 
 # Rimozione delle credenziali obsolete (su Windows):
 # 1. Apri "Pannello di Controllo"
@@ -82,7 +82,30 @@ git push --force-with-lease origin release/dev
 # 3. Rimuovi le credenziali relative a GitHub
 
 
-nano ~/.zshrc
-start-emulator
+git checkout -b "feat/inspect-deploy-error" a24ba87f2914d343b5677689ab8e459894308c7b
+# Stacca un branch da uno specifico commit
 
+
+
+----------------------- Comandi MAC ------------------------------------------- 
+nano ~/.zshrc
+source ~/.zshrc && code
+start-emulator
+open ~/.local/share/opencode/log/
+
+----------------------- OpenCode ---------------------------------------------- 
+Src: https://www.youtube.com/watch?v=e9j2iEwJru0
+Command examples -> /command/build.md -> /build 
+/sessions -> view all chat sessions
+/share -> share the chat content
+/compact -> create summary
+/export
+opencode github
+
+Editor vim (opencode.nvim) subterminal
+
+
+----------------------- Docker Directus ------------------------------------------- 
+docker compose up -d
+docker compose down
 

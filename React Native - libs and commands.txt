@@ -84,5 +84,17 @@ yarn expo run:ios
 
 
 
+# LIBS
+- expo-router per il routing
+- State-management solution -> Zustand
+- Secure key-value Storage -> MMKV
+- Picker, dropdown and other generic components -> react-native-paper
+- Date Picker -> react-native-date-picker
+- Form -> react-hook-form
+- Validazione form -> yup
+- Visualizzazione cross-Platform -> react-native-safe-area-context
+- gestione locale dei dati -> expo-sqlite
+- internationalization -> i18next
+
 
 
