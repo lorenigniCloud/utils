@@ -1,0 +1,36 @@
+@llm_wiki_basket_arcidosso/wiki/analyses/prd-piano-sviluppo.md 
+Puoi implementare la fase 3 del 
+## 7. Piano d'azione
+?
+Se durante l'attività hai delle domane, fermati e discutiamone insieme. **Non** improvvisare.
+Ricorda che hai a disposizione una documentazione estensiva @llm_wiki_basket_arcidosso/index.md piena di riferimenti a file che descrivono quello di cui hai bisogno.
+Se non vai a leggere quei file, vanifichi tutto il mio lavoro per averli creati, quindi consultali **sempre**
+
+Ricordati, una volta completata la fase, di aggiornare i relativi documenti nella cartella wiki.
+
+
+
+@llm_wiki_basket_arcidosso/wiki/analyses/prd-piano-sviluppo.md
+Ho bisogno che tu implementi la fase 3 della sezione '## 7. Piano d'azione'.
+
+Per farlo, segui rigorosamente questi step:
+
+1. Ricerca: Consulta @llm_wiki_basket_arcidosso/index.md per trovare tutti i riferimenti necessari alla fase 3. Devi sempre leggere i file correlati prima di iniziare a produrre qualsiasi output. È un requisito stretto.
+2. Allineamento: Prima di scrivere l'implementazione finale, fammi un breve riassunto di come intendi procedere. Se ti mancano informazioni o hai dei dubbi, fermati qui e fammi delle domande. Non improvvisare.
+3. Implementazione: Procedi con l'implementazione [INSERISCI QUI COSA VUOI: es. scrivendo il codice / redigendo il documento operativo / creando la tabella].
+4. Manutenzione Wiki: Una volta che abbiamo concordato e completato l'implementazione, aggiorna i relativi documenti .md nella cartella wiki per riflettere le novità. Assicurati di aggiornare anche l'index o il log se necessario.
+
+
+
+
+
+------------
+
+
+1. 
+Ora sei il mio agente LLM Wiki. Implementa questo esatto file di idee come il mio 'second brain' (secondo cervello) completo. 
+Guidami passo dopo passo: crea il file di schema AGENTS con le regole complete imposta index.md, definisci le convenzioni per le cartelle e mostrami il primo esempio di acquisizione (ingest). D'ora in poi, ogni interazione seguirà lo schema.
+
+2.
+Ora sei il mio agente LLM Wiki. Fai un’operazione di lint nel progetto
+llm_wiki_basket_arcidosso

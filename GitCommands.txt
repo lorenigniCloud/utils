@@ -92,6 +92,7 @@ nano ~/.zshrc
 source ~/.zshrc && code
 start-emulator
 open ~/.local/share/opencode/log/
+npx madge --circular --ts-config ./tsconfig.json --extensions ts,tsx ./app ./components ./lib ./hooks ./i18n
 
 ----------------------- OpenCode ---------------------------------------------- 
 Src: https://www.youtube.com/watch?v=e9j2iEwJru0
@@ -104,8 +105,22 @@ opencode github
 
 Editor vim (opencode.nvim) subterminal
 
+echo "Token set: $([ -n "$GITHUB_PERSONAL_ACCESS_TOKEN" ] && echo 'yes' || echo 'no')"
 
 ----------------------- Docker Directus ------------------------------------------- 
 docker compose up -d
 docker compose down
+
+# Applica uno schema in locale
+docker compose exec directus npx directus schema apply ./snapshots/schema.json
+
+# Crea uno schema in locale e lo copia nella cartella desiderata
+docker exec -it <nome_container> npx directus schema snapshot ./<nome_snapshot>.json --format json
+docker cp <nome_container>:/directus/<nome_snapshot>.json /Users/Lorenzo/Projects/Work/ampa-inside-art/snapshots/<nome_snapshot>.json
+
+
+
+
+
+
 

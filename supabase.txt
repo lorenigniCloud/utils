@@ -1,0 +1,44 @@
+# Inizializza un nuovo progetto Supabase locale
+supabase init
+
+# Avvia l'ambiente locale tramite Docker
+supabase start
+
+# Ferma i servizi in esecuzione in locale
+supabase stop
+
+# Ferma i servizi e resetta il database locale senza salvare i dati
+supabase stop --no-backup
+
+# Mostra lo stato e le credenziali (URL, chiavi API) dell'ambiente locale
+supabase status
+
+# Crea un nuovo file di migrazione
+supabase migration new <nome_migrazione>
+
+# Resetta il database locale, esegue le migrazioni e popola i dati con seed.sql
+supabase db reset
+
+# Scarica lo schema del database remoto e genera una migrazione locale
+supabase db pull
+
+# Applica le migrazioni locali sul database del progetto remoto
+supabase db push
+
+# Autentica l'utente nella CLI tramite token
+supabase login
+
+# Collega la cartella locale al progetto remoto in cloud
+supabase link --project-ref <project-id>
+
+# Mostra i log dei servizi Supabase in esecuzione sul computer
+supabase logs
+
+# Genera i tipi TypeScript ispezionando il database locale
+supabase gen types typescript --local > types/supabase.ts
+
+# Crea una nuova Edge Function locale
+supabase functions new <nome_funzione>
+
+# Esegue e testa le Edge Function in locale
+supabase functions serve

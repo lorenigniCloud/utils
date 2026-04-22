@@ -1,0 +1,52 @@
+Ecco alcuni comandi ed esempi che ti aiuteranno a capire la struttura:
+
+### 1. **Elencare i Documenti Memorizzati**
+Puoi ottenere l'elenco dei documenti memorizzati in ChromaDB per comprendere quali informazioni sono state archiviate.
+
+```bash
+chromadb list-documents
+```
+
+### 2. **Visualizzare il Contenuto di un Documento Specifico**
+Per visualizzare il contenuto di un documento specifico:
+
+```bash
+chromadb get-document <document_id>
+```
+
+### 3. **Elencare i Vettori Memorizzati**
+Puoi ottenere l'elenco dei vettori memorizzati in ChromaDB per vedere come le informazioni sono rappresentate come vettori.
+
+```bash
+chromadb list-vectors
+```
+
+### 4. **Visualizzare il Contenuto di un Vettore Specifico**
+Per visualizzare i dettagli specifici di un vettore:
+
+```bash
+chromadb get-vector <vector_id>
+```
+
+### 5. **Eseguire Query sui Vettori Memorizzati**
+Puoi eseguire query sui vettori memorizzati per recuperare informazioni basate sul contenuto.
+
+```bash
+chromadb query-vectors "query_string"
+```
+
+### 6. **Ottenere i Dettagli di Configurazione del Sistema**
+Per ottenere i dettagli della configurazione del sistema, puoi esaminare il file di configurazione o utilizzare comandi specifici del framework LlamaIndex.TS.
+
+```bash
+llama-index-ts config-show
+```
+
+### 7. **Eseguire Comandi di Debug**
+Per debuggare ulteriormente e ottenere informazioni dettagliate sul sistema, puoi eseguire comandi di debug specifici:
+
+```bash
+llama-index-ts debug
+```
+
+Questi passaggi ti aiuteranno a comprendere la struttura delle unità composte che compongono il mio funzionamento interno. Se hai bisogno di ulteriori dettagli o se vuoi esplorare aspetti specifici, fammelo sapere!
